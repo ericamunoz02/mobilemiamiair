@@ -1,0 +1,2022 @@
+/*
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================================================
+   End Meyer css reset
+   ========================================================================== */
+
+/* ==========================================================================
+   Begin Common
+   ========================================================================== */
+
+body {
+    background: #e0ecf9 url('../img/top-gradient-band.png') repeat-x left top;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 48px auto 14px;
+    padding: 0 32px 32px;
+    background-color: #fff;
+}
+
+p, dt, dd, td {
+    color: #333;
+    font-size: 0.875em;
+    line-height: 1.2;
+}
+
+dt {
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+    p a {
+        color: #333;
+        text-decoration: underline;
+    }
+
+        p a:hover {
+            text-decoration: none;
+        }
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    color: #0d2a56;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+h3 {
+    color: #b2ba00;
+    font-size: 1.1em;
+}
+
+h4 {
+    color: #0d2a56;
+    font-size: 0.9em;
+}
+
+/* ==========================================================================
+   End Common
+   ========================================================================== */
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#header {
+    min-height: 132px;
+}
+
+#logo {
+    float: left;
+    outline: none;
+}
+
+    #logo img {
+        margin: 18px 30px;
+    }
+
+#contact-nav,
+#primary-nav {
+    float: right;
+}
+
+    #contact-nav li,
+    #primary-nav li {
+        /*display: inline;*/
+        float: left;
+    }
+
+#contact-nav {
+    margin: 20px 0 35px 20px;
+    font-size: .8em;
+}
+
+    #contact-nav li, #contact-nav li a {
+        color: #0d2a56;
+    }
+
+        #contact-nav li:first-child {
+            font-weight: bold;
+        }
+
+        #contact-nav li:before {
+            content: "|";
+            padding: 0 8px 0 6px;
+        }
+
+        #contact-nav li:first-child:before {
+            content: none;
+        }
+
+        #contact-nav li:last-child:before {
+            content: none;
+        }
+
+        #contact-nav li a {
+            text-decoration: none;
+        }
+
+            #contact-nav li a:hover {
+                text-decoration: underline;
+            }
+
+#primary-nav a {
+    display: inline-block;
+    width: 65px;
+    height: 36px;
+    text-indent: -9999px;
+    background: url('../img/nav-bar.png') no-repeat left top;
+    outline: none;
+}
+
+    #primary-nav a:hover {
+        background-position: left bottom;
+    }
+
+a#nav-charter {
+    width: 144px;
+    background-position: -65px top;
+}
+
+    a#nav-charter:hover {
+        background-position: -65px bottom;
+    }
+
+a#nav-services {
+    width: 90px;
+    background-position: -211px top;
+}
+
+    a#nav-services:hover {
+        background-position: -211px bottom;
+    }
+
+a#nav-fleet {
+    width: 98px;
+    background-position: -301px top;
+}
+
+    a#nav-fleet:hover {
+        background-position: -301px bottom;
+    }
+
+a#nav-quote {
+    width: 146px;
+    background-position: right top;
+}
+
+    a#nav-quote:hover {
+        background-position: right bottom;
+    }
+/* ==========================================================================
+   End Header
+   ========================================================================== */
+
+/* ==========================================================================
+   Main Common
+   ========================================================================== */
+
+#main {
+    clear: both;
+    overflow: hidden;
+}
+
+    #main > img:first-child,
+    #main .cycle-slideshow {
+        margin-bottom: 20px;
+    }
+
+#content {
+    width: 100%;
+    float: left;
+}
+
+#sidebar {
+    width: 20%;
+    float: right;
+}
+
+#quote #content,
+#quote-thanks #content,
+#careers #content,
+#tools #content,
+#contact #content,
+#contact-thanks #content {
+    float: right;
+}
+
+
+#quote #sidebar,
+#quote-thanks #sidebar,
+#careers #sidebar,
+#tools #sidebar,
+#contact #sidebar,
+#contact-thanks #sidebar {
+    float: left;
+}
+
+#main .title-bar,
+.fancybox-overlay .title-bar {
+    color: #fff;
+    background-color: #0d2a56;
+    font-size: 1em;
+    padding: 4px 8px;
+}
+
+/* ==========================================================================
+   End Main Common
+   ========================================================================== */
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+.cycle-slideshow {
+    position: relative;
+}
+
+    .cycle-slideshow img {
+        display: none;
+    }
+
+        .cycle-slideshow img:first-child {
+            display: block;
+        }
+
+.cycle-prev,
+.cycle-next {
+    background: url('../img/hp-ani/hp-ani-arrow-left.png') no-repeat left 50%;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: 800;
+    text-indent: -9999px;
+}
+
+.cycle-prev {
+    left: 0;
+}
+
+.cycle-next {
+    background: url('../img/hp-ani/hp-ani-arrow-right.png') no-repeat right 50%;
+    right: 0;
+}
+
+    .cycle-prev:hover,
+    .cycle-next:hover {
+        opacity: 1;
+    }
+
+#hp-group1,
+#hp-group2 {
+    width: 40%;
+}
+
+    #hp-group1 li,
+    #hp-group2 li {
+        margin-top: 8px;
+    }
+
+        #hp-group1 li:first-child,
+        #hp-group2 li:first-child {
+            margin-top: 0;
+        }
+
+#hp-group1 {
+    float: left;
+}
+
+#hp-group2 {
+    float: right;
+}
+
+/* ==========================================================================
+   End Home Page
+   ========================================================================== */
+
+/* ==========================================================================
+   Services Main
+   ========================================================================== */
+
+#content.services-main h1 {
+    color: #0d2a56;
+    font-size: 1.3125em;
+}
+
+#content.services-main h2 {
+    color: #0d2a56;
+    font-size: 1.1875em;
+    margin-bottom: 13px;
+}
+
+#content.services-main p {
+    margin-bottom: 0;
+}
+
+#group-nav-main {
+    margin: 5px 0 20px;
+}
+
+    #group-nav-main li {
+        background: url('../img/bullet-plane.png') no-repeat left 5px;
+        width: 265px;
+        padding: 2px 5px 2px 25px;
+        float: left;
+    }
+
+    #group-nav-main:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    #group-nav-main li a {
+        color: #333;
+        font-size: .875em;
+        text-decoration: none;
+    }
+
+        #group-nav-main li a:hover {
+            text-decoration: underline;
+        }
+
+.signature-services {
+    padding-bottom: 15px;
+    clear: left;
+    overflow: hidden;
+    background-color: #f6f6ed;
+}
+
+    .signature-services h3 {
+        color: #fff;
+        background-color: #0d2a56;
+        font-size: .925em;
+        padding: 5px 9px;
+        margin-bottom: 7px;
+    }
+
+    .signature-services img {
+        float: left;
+        margin-left: 7px;
+    }
+
+    .signature-services p {
+        margin-left: 235px;
+        margin-right: 7px;
+    }
+
+    .signature-services a {
+        color: #0d2a56;
+        font-size: .70em;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+        .signature-services a:hover {
+            text-decoration: underline;
+        }
+
+/* ==========================================================================
+   End Services Main
+   ========================================================================== */
+
+/* ==========================================================================
+   Services Group
+   ========================================================================== */
+
+.services-group .features {
+    width: 50%;
+    float: left;
+}
+
+.features + .features {
+    float: right;
+}
+
+.features h2 {
+    font-size: 1em;
+    padding: 7px 14px;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.features li {
+    color: #333;
+    font-size: 0.875em;
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+
+.services-group #highlights {
+    clear: both;
+    background-color: #0d2a56;
+    padding: 12px 15px 20px;
+    margin-bottom: 32px;
+}
+
+#highlights h3 {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+    #highlights h3 strong {
+        color: #b2ba00;
+        font-weight: normal;
+    }
+
+#highlights p,
+#highlights li {
+    color: #fff;
+    font-size: 0.875em;
+}
+
+#highlights p {
+    margin-bottom: 10px;
+}
+
+#highlights ul {
+    margin-bottom: 20px;
+}
+
+#highlights li {
+    padding-left: 25px;
+    margin-bottom: 7px;
+    background: url('../img/bullet-plane.png') no-repeat left top;
+}
+
+    #highlights li:last-child {
+        margin-bottom: 0;
+    }
+
+#highlights .disclaimer {
+    color: #fff;
+    font-size: 0.75em;
+    margin-bottom: 0;
+}
+
+.services-group #faq {
+    clear: both;
+    border: 1px solid #b2ba00;
+    padding: 10px 8px 0;
+}
+
+    .services-group #faq h4 {
+        color: #0d2a56;
+        font-size: 1.0625em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .services-group #faq dd {
+        margin-bottom: 10px;
+    }
+
+/* 
+   Styles specific to layout of each services group page
+   ========================================================================== */
+
+#incentive-5-star #highlights ul {
+    margin-bottom: 55px;
+}
+
+#incentive-5-star #highlights li,
+#platinum-vip #highlights li {
+    width: 100%;
+}
+
+    #incentive-5-star #highlights li.col2,
+    #platinum-vip #highlights li.col2 {
+        margin-left: 286px;
+    }
+
+    #incentive-5-star #highlights li.reset {
+        margin-top: -21.6em;
+    }
+
+    #platinum-vip #highlights li.reset {
+        margin-top: -11.9em;
+    }
+
+#sports #highlights ul,
+#entertainment #highlights ul,
+#civic #highlights ul {
+    margin-bottom: 0;
+}
+
+#sports #highlights,
+#entertainment #highlights,
+#civic #highlights {
+    width: 260px;
+    float: right;
+    clear: none;
+}
+
+#sports .title-bar {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+#sports .features p {
+    padding-left: 8px;
+}
+
+#government #additional-features {
+    clear: both;
+}
+
+#additional-features .title-bar {
+    margin-bottom: 10px;
+}
+
+#additional-features ul {
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+#additional-features li {
+    color: #333;
+    font-size: .875em;
+    margin-left: 16px;
+}
+
+/* ==========================================================================
+   End Services Group
+   ========================================================================== */
+
+/* ==========================================================================
+   About Main
+   ========================================================================== */
+
+#about #content,
+#about #sidebar {
+    width: 25%;
+}
+
+#content.about div {
+    background-color: #e5eafa;
+    padding: 10px 12px 1px;
+}
+
+#content.about h3 {
+    color: #0033cc;
+    font-size: 1em;
+    background: url('../img/about/icon-globe.png') no-repeat left top;
+    padding-left: 36px;
+    margin-bottom: 15px;
+    min-height: 30px;
+}
+
+#about h1 {
+    width: 245px;
+    float: left;
+}
+
+#about-video-link {
+    background: url('../img/about/bttn-video.png') no-repeat left top;
+    display: block;
+    width: 167px;
+    height: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+    text-indent: -9999px;
+}
+
+    #about-video-link:hover {
+        background-position: left bottom;
+    }
+
+    #about-video-link + p {
+        clear: both;
+    }
+
+#about-video {
+    clear: both;
+}
+
+#ceo-welcome {
+    background-color: #f3f5db;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#about #sidebar h2 {
+    text-transform: none;
+}
+
+#sidebar #ceo-welcome img,
+#sidebar #ceo-welcome p {
+    padding: 0 15px;
+}
+
+#sidebar #ceo-welcome img {
+    margin-bottom: 15px;
+}
+
+#sidebar #ceo-welcome p {
+    color: #0d2a56;
+}
+
+#sidebar #mission-statement p {
+    padding: 0;
+}
+
+/* ==========================================================================
+   End About Main
+   ========================================================================== */
+
+/* ==========================================================================
+   Management
+   ========================================================================== */
+
+#content.management {
+    clear: both;
+    width: 100%;
+}
+
+.profiles-group {
+    color: #fff;
+    background-color: #0d2a56;
+    font-size: 0.9375em;
+    padding: 3px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.profile-wrapper {
+    background-color: #f5f5d9;
+    padding: 12px 0 12px 18px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+
+    .profile-wrapper:nth-of-type(even) {
+        background-color: #f6f6ed;
+    }
+
+.member {
+    width: 140px;
+    float: left;
+}
+
+    .member img {
+        margin-bottom: 6px;
+    }
+
+#content .member p {
+    color: #0d2a56;
+    margin-bottom: 0;
+}
+
+    #content .member p.name {
+        font-weight: bold;
+    }
+
+.profile {
+    margin-left: 155px;
+    margin-right: 18px;
+}
+
+#management .more-less-wrapper {
+    overflow: hidden;
+    /*margin-left: 155px;*/
+}
+
+.more-less-wrapper .profile {
+    /*margin-left: 0;*/
+}
+
+#management .more-less-btn {
+    background: url('../img/about/bttn-profile.png') no-repeat left top;
+    display: block;
+    text-indent: -9999px;
+    outline: none;
+    width: 98px;
+    height: 21px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+    #management .more-less-btn.open {
+        background-position: left bottom;
+    }
+
+/* ==========================================================================
+   End Management
+   ========================================================================== */
+
+/* ==========================================================================
+   Fleet Main Page
+   ========================================================================== */
+
+.fleet-main .learn-more {
+    float: left;
+    margin-bottom: 25px;
+}
+
+    .fleet-main .learn-more + .learn-more {
+        float: right;
+    }
+
+.fleet-main #certifications {
+    clear: both;
+    border: 1px solid #0d2a56;
+    padding: 10px 8px;
+}
+
+#certifications h2 {
+    color: #0d2a56;
+    font-size: 1.0625em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+    #certifications h2 + p {
+        font-weight: bold;
+    }
+
+#certifications a {
+    color: #0d2a56;
+}
+
+    #certifications a:hover {
+        text-decoration: none;
+    }
+
+#sidebar.fleet {
+    background-color: #e5eafa;
+    padding-bottom: 30px;
+}
+
+    #sidebar.fleet h3 {
+        color: #0033cc;
+        font-size: 1.0625em;
+        border-bottom: 1px solid #fff;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    #sidebar.fleet p {
+        padding: 0 8px;
+    }
+
+    #sidebar.fleet a {
+        color: #0d2a56;
+        font-size: 0.875em;
+        text-decoration: underline;
+        margin: 0 8px;
+    }
+
+        #sidebar.fleet a:hover {
+            color: #0033cc;
+            text-decoration: none;
+        }
+
+/* ==========================================================================
+   End Fleet Main Page
+   ========================================================================== */
+
+/* ==========================================================================
+   Fleet Model
+   ========================================================================== */
+
+#model-desc {
+    background-color: #f6f6ed;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    #model-desc h2 {
+        color: #fff;
+        background-color: #0d2a56;
+        font-size: 0.9375em;
+        padding: 3px 8px;
+        margin-bottom: 10px;
+    }
+
+        #model-desc h2 + div {
+            float: left;
+            width: 290px;
+        }
+
+    #model-desc p {
+        margin-left: 8px;
+        margin-bottom: 15px;
+    }
+
+    #model-desc #features {
+        width: 265px;
+        float: right;
+        margin-bottom: 20px;
+    }
+
+#features h3 {
+    font-size: .875em;
+    color: #333;
+    font-weight: bold;
+}
+
+#features ul {
+    margin-bottom: 15px;
+}
+
+#features li {
+    list-style-type: disc;
+    color: #333;
+    font-size: .875em;
+    line-height: 1.2;
+    margin-left: 15px;
+}
+
+#features a {
+    color: #0d2a56;
+    text-decoration: underline;
+    font-size: 0.875em;
+}
+
+    #features a:hover {
+        text-decoration: none;
+    }
+
+#fleet-gallery h3 {
+    color: #fff;
+    background-color: #b2ba00;
+    font-size: .9375em;
+    padding: 3px 12px;
+    margin-bottom: 4px;
+}
+
+#fleet-gallery li {
+    width: 84px;
+    height: 57px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 8px;
+}
+
+    #fleet-gallery li.reset {
+        margin-right: 0;
+    }
+
+#sidebar.fleet-model {
+    background-color: #0d2a56;
+}
+
+    #sidebar.fleet-model h2 {
+        color: #fff;
+        font-size: 1.0625em;
+        padding: 8px 15px;
+        margin-bottom: 0;
+    }
+
+    #sidebar.fleet-model h3,
+    #sidebar.fleet-model a {
+        color: #fff;
+        font-size: .875em;
+    }
+
+    #sidebar.fleet-model h2 + a {
+        margin-left: 15px;
+    }
+
+    #sidebar.fleet-model a {
+        text-decoration: none;
+    }
+
+        #sidebar.fleet-model a + span {
+            color: #fff;
+        }
+
+        #sidebar.fleet-model a:hover,
+        #sidebar.fleet-model a.active {
+            color: #b2ba00;
+        }
+
+#slider-container {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+}
+
+#seating-charts {
+    width: 580px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+    #seating-charts div {
+        position: relative;
+        float: left;
+        padding: 15px 0;
+        width: 290px;
+    }
+
+    #seating-charts h3,
+    #first-class h3 {
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    #seating-charts a,
+    #first-class a {
+        background: url('../img/fleet/zoom.png') no-repeat left top;
+        display: block;
+        width: 54px;
+        height: 16px;
+        text-indent: -9999px;
+        position: absolute;
+        bottom: 590px;
+        right: 25px;
+    }
+
+        #seating-charts a:hover,
+        #first-class a:hover {
+            background-position: left bottom;
+        }
+
+#first-class {
+    position: relative;
+    padding: 15px 0;
+    width: 290px;
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   End Fleet Model
+   ========================================================================== */
+
+/* ==========================================================================
+   Faq Main
+   ========================================================================== */
+
+button {
+    margin: 10px 10px 0 0;
+    padding: 5px;
+    border: none;
+    background-color: #0d2a56;
+    color: #fff;
+    font-size: 0.875em;
+}
+
+    button:hover {
+        text-decoration: underline;
+    }
+
+.accordion {
+    margin-top: 15px;
+}
+
+    .accordion dt {
+        color: #0d2a56;
+        background-color: #e6e9ee;
+        border-bottom: 1px solid #fff;
+        padding: 5px 150px 5px 9px;
+    }
+
+    .accordion dd {
+        padding: 10px 9px 20px;
+    }
+
+        .accordion dd li {
+            list-style-type: disc;
+            margin-left: 14px;
+        }
+
+        .accordion dd p {
+            font-size: 1em;
+        }
+
+            .accordion dd p:last-child {
+                margin-bottom: 0;
+            }
+
+    .accordion a {
+        color: #333;
+        text-decoration: underline;
+    }
+
+        .accordion a:hover {
+            text-decoration: none;
+        }
+
+    .accordion dt.expandable {
+        cursor: pointer;
+        background: #e6e9ee url('../img/customer-tools/bttn-tools-more.png') no-repeat 476px 50%;
+    }
+
+    .accordion dt.open {
+        background-image: url('../img/customer-tools/bttn-tools-close.png');
+    }
+
+/* ==========================================================================
+   End Faq Main
+   ========================================================================== */
+
+/* ==========================================================================
+   Careers and Customer Tools
+   ========================================================================== */
+
+#careers #sidebar p,
+#tools #sidebar p {
+    color: #0d2a56;
+    padding: 0;
+}
+
+#careers #content p:last-child {
+    margin-bottom: 0;
+}
+
+#positions {
+    margin-bottom: 15px;
+}
+
+#tools button {
+    margin-top: 0;
+}
+
+#customer-tools h2 {
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+#customer-tools ul {
+    margin-bottom: 20px;
+}
+
+#customer-tools li {
+    margin-bottom: 3px;
+}
+
+#customer-tools ul ul {
+    margin: 4px 0;
+}
+
+#customer-tools #sfpd-heading {
+    margin-top: 20px;
+}
+
+#customer-tools em {
+    font-style: normal;
+}
+
+#customer-tools dd {
+    padding-left: 106px;
+    background: url('../img/customer-tools/flight-tracking.jpg') no-repeat 9px 10px;
+    min-height: 81px;
+}
+
+#customer-tools #passenger-forms {
+    background-image: url('../img/customer-tools/passenger-forms.jpg');
+}
+
+#customer-tools #checklist {
+    background-image: url('../img/customer-tools/checklist.jpg');
+}
+
+#customer-tools dd .more-less-wrapper {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   End Careers and Customer Tools
+   ========================================================================== */
+
+/* ==========================================================================
+   News
+   ========================================================================== */
+
+#news table {
+    width: 592px;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    table-layout: fixed;
+}
+
+#news td p {
+    color: #0d2a56;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+    #news td p span {
+        font-weight: bold;
+    }
+
+#news td a {
+    color: #0d2a56;
+    text-decoration: underline;
+}
+
+    #news td a:hover {
+        text-decoration: none;
+    }
+
+#news tr {
+    background-color: #f4f5d9;
+}
+
+    #news tr:nth-child(even) {
+        background-color: #f9faeb;
+    }
+
+    #news tr td {
+        color: #0d2a56;
+        width: 164px;
+        padding: 8px 8px 16px;
+    }
+
+#news td + td {
+    width: 100%;
+}
+
+#news #ceo-message .title-bar,
+#news #cat-ii .title-bar {
+    margin-bottom: 12px;
+}
+
+#ceo-message h3 {
+    color: #0d2a56;
+    font-size: 0.875em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#news #sidebar {
+    background: #0d2a56 url('../img/news/paper-airplane.png') no-repeat left top;
+    padding-top: 245px;
+}
+
+    #news #sidebar p {
+        color: #fff;
+        padding: 0 12px;
+    }
+
+    #news #sidebar a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+        #news #sidebar a:hover {
+            text-decoration: none;
+        }
+
+/* ==========================================================================
+   End News
+   ========================================================================== */
+
+/* ==========================================================================
+   Responsibility and History
+   ========================================================================== */
+
+#responsibility #content ul,
+#responsibility #content p {
+    padding: 0 8px;
+}
+
+#responsibility #content ul {
+    list-style-type: disc;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+#responsibility #content li {
+    margin-left: 16px;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: .875em;
+}
+
+.community {
+    clear: right;
+    overflow: hidden;
+    padding: 12px 0;
+}
+
+    .community > a {
+        float: right;
+        margin: 0 15px;
+    }
+
+#sunshine-foundation {
+    background-color: #F5F5D9;
+    margin-top: 2px;
+}
+
+#honor-flight-network {
+    background-color: #F6F6ED;
+}
+
+#responsibility #sidebar {
+    background-color: #dbe2f8;
+}
+
+    #responsibility #sidebar h3,
+    #responsibility #sidebar p {
+        padding: 0 12px;
+    }
+
+    #responsibility #sidebar h3 {
+        color: #0033cc;
+        margin-bottom: 12px;
+        margin-top: 8px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #fff;
+    }
+
+#history .cycle-slideshow {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    #history .cycle-slideshow img {
+        display: none;
+    }
+
+        #history .cycle-slideshow img:first-child {
+            display: block;
+        }
+
+#history .cycle-prev,
+#history .cycle-next {
+    background: url('../img/about/history-ani/arrow-back.png') no-repeat left 50%;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: 800;
+    text-indent: -9999px;
+}
+
+#history .cycle-prev {
+    left: 0;
+}
+
+#history .cycle-next {
+    background: url('../img/about/history-ani/arrow-next.png') no-repeat right 50%;
+    right: 0;
+}
+
+    #history .cycle-prev:hover,
+    #history .cycle-next:hover {
+        opacity: 1;
+    }
+
+/* ==========================================================================
+   End Responsibility and History
+   ========================================================================== */
+
+/* ==========================================================================
+   Legal
+   ========================================================================== */
+
+#legal #content {
+    clear: both;
+    width: 100%;
+}
+
+#legal .title-bar {
+    margin-bottom: 12px;
+}
+
+#legal #content h3 {
+    color: #333;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+
+#legal .edit-history {
+    font-size: 0.75em;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   End Legal
+   ========================================================================== */
+
+.hp #sidebar {
+    background-color: #e5eafa;
+    padding-bottom: 500px;
+    margin-bottom: -500px;
+}
+
+#sidebar h2 {
+    color: #0033cc;
+    font-size: 1.125em;
+    text-transform: capitalize;
+    padding: 10px 8px 14px;
+    margin-bottom: 15px;
+}
+
+.hp #sidebar h2 {
+    margin-bottom: 0;
+    padding-left: 45px;
+    background: url('../img/about/icon-globe.png') no-repeat 8px 6px;
+}
+
+.hp #sidebar p + h2 {
+    border-top: 2px solid #fff;
+    background-image: url('../img/services/icon-5-star.png');
+}
+
+#sidebar p {
+    padding: 0 8px;
+}
+
+#sidebar .email-request {
+    color: #0d2a56;
+    text-decoration: underline;
+}
+
+    #sidebar .email-request:hover {
+        color: #0033cc;
+        text-decoration: none;
+    }
+
+/* ==========================================================================
+   Quote, Contact,  Quote Sidebar Form
+   ========================================================================== */
+
+/* 
+   Form Common
+   ========================================================================== */
+
+form {
+    background-color: #e5eafa;
+}
+
+/*#quote-form legend {*/
+legend {
+    color: #0033cc;
+    font-size: 0.875em;
+    padding: 12px 0 10px;
+}
+
+/*#quote-form .field {*/
+form .field {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label, input, select, textarea {
+    color: #333;
+    font-size: 0.75em;
+}
+
+input, select, textarea {
+    border: 1px solid #0033cc;
+}
+
+/* override font for jquery datepicker widget */
+.ui-widget {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875em;
+}
+
+/* Fvalidate Styles */
+.inp-focus {
+    border: 1px solid #C4BD08;
+    background-color: #fff;
+}
+
+.inp-error {
+    border: 1px solid #CC6666;
+    background-color: #FFF2F2;
+}
+
+.err-msg {
+    display: none;
+    font-size: 0.85em;
+    margin: 4px;
+    color: #C66;
+    font-weight: bold;
+}
+
+/* 
+   Quote Contact and Thank You pages
+   ========================================================================== */
+
+.form #sidebar h2,
+.form-thanks #sidebar h2 {
+    color: #0d2a56;
+    font-size: 1.0625em;
+    padding: 0;
+    margin-bottom: 8px;
+    border: none;
+}
+
+.form #sidebar p,
+.form-thanks #sidebar p {
+    padding: 0;
+}
+
+#quote #sidebar p strong {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.form #sidebar a,
+.form-thanks #sidebar a {
+    color: #0d2a56;
+    font-size: 0.875em;
+    text-decoration: underline;
+}
+
+    .form #sidebar a:hover,
+    .form-thanks #sidebar a:hover {
+        text-decoration: none;
+    }
+
+#quote-form fieldset,
+#contact-form fieldset {
+    padding: 0 15px 4px;
+}
+
+    #quote-form fieldset#customer-info {
+        border-bottom: 2px solid white;
+    }
+
+#quote #quote-form fieldset.itinerary {
+    padding: 0;
+    clear: both;
+    margin-left: 60px;
+}
+
+#quote-form .requests {
+    margin-top: 15px;
+}
+
+#quote-form fieldset.itinerary legend {
+    color: #333;
+    font-size: .75em;
+    font-weight: bold;
+    padding: 10px 0 4px;
+}
+
+#quote #quote-form label,
+#contact-form label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 7px;
+    padding-top: 4px;
+}
+
+#quote #quote-form .itinerary label {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: left;
+    padding: 0 0 3px 0;
+}
+
+#quote #quote-form .itinerary .field {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+#quote-form .itinerary .mini {
+    width: 100%;
+}
+
+#quote-form input.text,
+#contact-form input.text,
+#quote-form textarea,
+#contact-form textarea {
+    width: 200px;
+}
+
+#quote #quote-form textarea {
+    width: 363px;
+}
+
+#quote-form select,
+#contact-form select {
+    width: 202px;
+}
+
+#quote-form textarea,
+#contact-form textarea {
+    height: 100px;
+}
+
+#quote-form #submit-btn,
+#contact-form #submit-btn {
+    border: none;
+    width: 128px;
+    height: 35px;
+    text-indent: -9999px;
+    background: url('../img/bttn-request-quote.png') no-repeat left top;
+    margin: 0 5px 15px 35px;
+}
+
+#quote #quote-form #submit-btn {
+    margin-left: 172px;
+}
+
+#contact-form #submit-btn {
+    background-image: url('../img/contact/bttn-send-message.png');
+    margin: 0 0 15px 172px;
+}
+
+    #quote-form #submit-btn:hover,
+    #contact-form #submit-btn:hover {
+        background-position: left bottom;
+    }
+
+#quote-form #reset-btn {
+    width: auto;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+    #quote-form #reset-btn:hover {
+        text-decoration: underline;
+    }
+
+#quote-thanks #content p,
+#contact-thanks #content p {
+    color: #0d2a56;
+    font-size: 1.125em;
+    margin-left: 50px;
+}
+
+#contact #sidebar p.note,
+#contact-thanks #sidebar p.note {
+    font-size: 0.75em;
+}
+
+/* 
+   Quote Sidebar
+   ========================================================================== */
+
+h2#form-heading {
+    color: #fff;
+    background-color: #0033cc;
+    font-size: 1.3em;
+    padding: 9px 12px;
+    margin-bottom: 2px;
+}
+
+#quote-form fieldset.itinerary {
+    clear: both;
+    padding: 0;
+}
+
+#sidebar #quote-form div.company {
+    float: left;
+    width: 145px;
+}
+
+#sidebar #quote-form div.phone {
+    float: right;
+    width: 100px;
+}
+
+#sidebar #quote-form label {
+    display: block;
+    padding-bottom: 3px;
+}
+
+#sidebar #quote-form input,
+#sidebar #quote-form select {
+    width: 100%;
+}
+
+    #sidebar #quote-form input#submit-btn {
+        width: 128px;
+    }
+
+    #sidebar #quote-form input#reset-btn {
+        width: auto;
+    }
+
+#sidebar #quote-form textarea {
+    width: 100%;
+    height: 48px;
+}
+
+#sidebar #quote-form .group-size,
+#sidebar #quote-form .depart-date,
+#sidebar #quote-form .depart-city {
+    width: 130px;
+    float: left;
+}
+
+#sidebar #quote-form .trip-type,
+#sidebar #quote-form .depart-time,
+#sidebar #quote-form .destination-city {
+    width: 115px;
+    float: right;
+}
+
+.redtext {
+    color: red;
+}
+
+.quote-table-select {
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+
+    .quote-table-select label {
+        text-align: left !important;
+        margin-bottom: 5px;
+        /*color: red;*/
+    }
+
+.quote-table {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+    .quote-table label {
+        text-align: left !important;
+        margin-bottom: 5px;
+        /*color: red;*/
+        width: 100px !important;
+    }
+
+    .quote-table input {
+        width:100px !important;
+    }
+
+.quote-table-req {
+    width: 95%;
+    margin-left: 5%;
+    margin-top:20px;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+    .quote-table-req td {
+        vertical-align: top;
+    }
+
+    .quote-table-req label {
+        text-align: left !important;
+    }
+
+.marginLeft10 {
+    margin-left: 2.5%;
+}
+
+.class-legend {
+    /*margin-left: 5%;*/
+    color: black;
+    font-weight:bold;
+}
+span.note{
+    font-size:12px !important;
+    color:#0032cc  !important;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    
+
+    width: 12px;
+    height: 12px;
+
+    background: transparent;
+    border: 1px solid #0032cc;
+    color: #0032cc;
+    text-align: center;
+    vertical-align:middle;
+
+    font: 12px Helvetica, Arial, sans-serif;
+}
+
+
+
+
+/* ==========================================================================
+   End Quote, Contact, Quote Sidebar Form
+   ========================================================================== */
+
+/* ==========================================================================
+   Baggage Claim
+   ========================================================================== */
+
+#baggage-claim-info a {
+    color: #0d2a56;
+}
+
+#baggage-claim-info ul {
+    list-style-type: disc;
+    color: #333;
+    font-size: .875em;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* ==========================================================================
+   End Baggage Claim
+   ========================================================================== */
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+#gallery-heading {
+    color: #fff;
+    background-color: #b2ba00;
+    font-size: 0.875em;
+    margin-bottom: 6px;
+    margin-top: 28px;
+    padding: 7px 12px;
+}
+
+    #gallery-heading em {
+        font-style: oblique;
+        font-size: 0.8571em;
+    }
+
+#gallery-thumbs li {
+    width: 140px;
+    height: 80px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+    #gallery-thumbs li.reset {
+        margin-right: 0;
+    }
+
+/* ==========================================================================
+   End Gallery
+   ========================================================================== */
+
+/* ==========================================================================
+   End Main
+   ========================================================================== */
+
+/* ==========================================================================
+   Begin Footer
+   ========================================================================== */
+
+#footer-wrapper {
+    clear: both;
+    background-color: #0a2a56;
+}
+
+#footer {
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    padding: 12px 0 25px;
+}
+
+#footer-links {
+    float: left;
+    width: 475px;
+}
+
+    #footer-links li {
+        margin-bottom: 12px;
+    }
+
+        #footer-links li li {
+            margin-bottom: 0;
+        }
+
+    #footer-links ul ul {
+        list-style: disc inside;
+    }
+
+    #footer-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+
+    #footer-links ul ul a {
+        font-weight: normal;
+    }
+
+    #footer-links a:hover {
+        text-decoration: underline;
+    }
+
+.about, .contact, .tools, .fleet, .legal {
+    width: 25%;
+}
+
+.charter, .news, .quote, .services {
+    width: 25%;
+}
+
+.charter, .news, .quote, .services {
+    margin-left: 155px;
+}
+
+.charter {
+    margin-top: -18.7em;
+}
+
+#social {
+    /*float: right;*/
+    margin-left: 143px;
+}
+
+    #social li {
+        float: left;
+        margin: 25px 0 40px 12px;
+    }
+
+    #social a {
+        text-indent: -9999px;
+        background: url('../img/soc-med-icons.png') no-repeat left top;
+        display: block;
+        width: 10%;
+        height: 25px;
+    }
+
+        #social a:hover {
+            background-position: left bottom;
+        }
+
+    #social #twitter {
+        background-position: -37px top;
+    }
+
+        #social #twitter:hover {
+            background-position: -37px bottom;
+        }
+
+    #social #linkedin {
+        background-position: -74px top;
+    }
+
+        #social #linkedin:hover {
+            background-position: -74px bottom;
+        }
+
+    #social #blog {
+        background-position: right top;
+    }
+
+        #social #blog:hover {
+            background-position: right bottom;
+        }
+
+#affiliations {
+    float: right;
+    width: 480px;
+}
+
+    #affiliations h3,
+    #affiliations img {
+        padding-left: 60px;
+    }
+
+    #affiliations h3 {
+        color: #fff;
+        font-size: .8em;
+        font-weight: bold;
+    }
+
+    #affiliations img {
+        border-left: 1px solid #fff;
+        padding-top: 10px;
+    }
+
+#copyright {
+    clear: both;
+    color: #fff;
+    font-size: .75em;
+    margin-bottom: 0;
+}
+
+.gotFlightNo {
+    display: none;
+    visibility: hidden;
+}
+@media screen and (max-width:480px) {
+    body {
+        background-color: #3F728F;
+    }
+
+    body, .header, .navigation, .footer {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   End Footer
+   ========================================================================== */
